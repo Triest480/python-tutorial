@@ -67,7 +67,7 @@ class Dog:
 
     def dead_msg(self):
         if self.is_dead:
-            print('Unfortunately %s has died of %s. Please adopt a new Dog.' % (self.name, self._cause_of_death))
+            print('Unfortunately %s has died of %s.' % (self.name, self._cause_of_death))
 
     def get_status(self):
         if not self._status:
@@ -189,7 +189,7 @@ class DogManager:
                     time.sleep(1)
                     break
         else:
-            print('You own no dogs at the moment. Please adopt one first!')
+            print('You don\'t own any dogs at the moment. Please adopt one first!')
             print()
             time.sleep(1)
 
@@ -211,7 +211,7 @@ class DogManager:
                 print('    ' + str(ind) + ': ' + dog.name + ' - ' + status)
             print()
         else:
-            print('You own no dogs at the moment. Please adopt one first!')
+            print('You don\'t own any dogs at the moment. Please adopt one first!')
             print()
 
 
